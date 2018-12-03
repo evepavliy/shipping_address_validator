@@ -26,7 +26,7 @@ for data_item in data:
     checked_addr = string.replace(checked_addr, '/', '')
     
     # Utilising HereMaps API to check if adress is Valid
-    url = "https://geocoder.api.here.com/6.2/geocode.json?app_id=yeybJcZlPqKbrVpyu0vL&app_code=pynNcHIkgKcvO_lcWMOezA&searchtext="+checked_addr+""
+    url = "https://geocoder.api.here.com/6.2/geocode.json?app_id=APP_ID&app_code=APP_CODE&searchtext="+checked_addr+""
     response_api = urllib.urlopen(url.encode('ascii','ignore'))
     data_api = json.loads(response_api.read())
 
